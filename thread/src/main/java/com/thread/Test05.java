@@ -5,6 +5,17 @@ import java.util.concurrent.*;
 /**
  * 通过线程池计算结果
  *
+ * 使用future获取异步的结果
+ * 阻塞get()
+ * 轮询isDone（）
+ *
+ * 这两个方法都不是太好，可以使用CompletableFuture，
+ *
+ * 异步任务结束时，会自动回调某个对象的方法
+ * 异步任务出错时，会自动回调某个对象的方法
+ * 主线程设置好回调后，不在关系异步任务的执行
+ *
+ *
  */
 class MyCallable implements Callable<Integer>{
 
