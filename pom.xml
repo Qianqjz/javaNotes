@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>suanfa</module>
-        <module>threadTips</module>
         <module>algo</module>
         <module>thread</module>
+        <module>spring</module>
     </modules>
 
     <dependencies>
