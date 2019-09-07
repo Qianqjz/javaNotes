@@ -15,12 +15,16 @@ class RunableImpl implements Runnable{
 
     public void run() {
         lock.lock();
-        int sum=0;
-        for (int i=0;i<10;i++){
-            sum+=i;
+        try {
+            int sum=0;
+            for (int i=0;i<10;i++){
+                sum+=i;
+            }
+            System.out.println("sum = "+sum);
+        }finally {
+            lock.unlock();
         }
-        System.out.println("sum = "+sum);
-        lock.unlock();
+
     }
 }
 
@@ -33,7 +37,7 @@ public class Test03 {
         RunableImpl runable=new RunableImpl();
 
         executorService.submit(runable);
-        executorService.submit(runable);
+//        executorService.submit(runable);
 
         executorService.shutdown();
 
