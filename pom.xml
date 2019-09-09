@@ -12,6 +12,7 @@
         <module>algo</module>
         <module>thread</module>
         <module>spring</module>
+        <module>design_pattern</module>
     </modules>
 
     <dependencies>
