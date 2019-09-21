@@ -1,4 +1,4 @@
-package com.design.proxy;
+package com.design.staticproxy;
 
 /**
  *
