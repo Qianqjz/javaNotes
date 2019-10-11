@@ -2,41 +2,39 @@ package com.ms;
 
 import java.util.Scanner;
 
-public class Main05{
-    public static void stringSplit(StringBuilder builder ,String str){
-        if(str==null||str.length()<1){
-            return;
+/**
+ * 0x2AF5
+ */
+
+public class Main05 {
+
+    private static int hexToDec(String hex) {
+        final int BASE = 16;
+        int result = 0;
+
+        for (int i = 2; i < hex.length(); i++) {
+            result = result * BASE + hexToNum(hex.charAt(i));
         }
-
-        int pos = 0;
-        while((pos+=8)<str.length()){
-            builder.append(str.substring(pos-8,pos)).append("\n");
-        }
-
-        if(str.length()<pos){
-            builder.append(str.substring(pos-8,str.length()));
-
-            for(int i=str.length();i<pos;i++){
-                builder.append(0);
-            }
-            builder.append("\n");
-        }
-
+        return result;
     }
 
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
-        StringBuilder builder=new StringBuilder(256);
-        while(scanner.hasNext()){
-            builder.setLength(0);
-            String input=scanner.nextLine();
-            stringSplit(builder,input);
-            input=scanner.nextLine();
-            stringSplit(builder,input);
-            System.out.println(builder);
+    private static int hexToNum(char ch) {
 
+        if (ch >= '0' && ch <= '9') {
+            return ch - '0';
+        } else if (ch >= 'a' && ch <= 'z') {
+            return ch - 'a' + 10;
+        } else {
+            return ch - 'A' + 10;
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        while(scanner.hasNext()){
+            String input=scanner.nextLine().trim();
+            System.out.println(hexToDec(input));
+        }
+        scanner.close();
     }
 }
-
-
