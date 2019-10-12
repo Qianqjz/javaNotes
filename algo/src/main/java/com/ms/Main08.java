@@ -9,7 +9,7 @@ public class Main08 {
         Scanner scan=new Scanner(System.in);
         while(scan.hasNext()){
             int pares=Integer.parseInt(scan.nextLine().trim());
-            SortedMap<Integer,Integer> map=new TreeMap<>();
+            SortedMap<Integer,Integer> map=new TreeMap<Integer,Integer>();
             for(int i=0;i<pares;i++){
                 String[] nums=scan.nextLine().trim().split(" ");
                 int key = Integer.parseInt(nums[0]);

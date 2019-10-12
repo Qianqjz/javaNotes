@@ -12,7 +12,7 @@ public class Main03 {
             // 读取输入的数字数
             int num = scanner.nextInt();
             // 存放输入的数字
-            Set<Integer> set = new TreeSet<>();
+            Set<Integer> set = new TreeSet<Integer>();
             while ((--num) >= 0) {
                 set.add(scanner.nextInt());
             }

@@ -12,7 +12,7 @@ public class Main09 {
             String str=String.valueOf(pases);
             StringBuilder builder=new StringBuilder(128);
 //            HashSet<Character> hashset=new LinkedHashSet<>();
-            Set<Character> hashset=new LinkedHashSet<>();
+            Set<Character> hashset=new LinkedHashSet<Character>();
             for(int i=0;i<str.length();i++){
                 hashset.add(str.charAt(i));
             }
