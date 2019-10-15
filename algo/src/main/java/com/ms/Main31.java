@@ -31,6 +31,14 @@ public class Main31 {
 
         return h * 0.5 * up + h * down;
     }
+
+    public static double getJourney(double h,int count){
+        double result=0;
+        for(int i=1;i<=count;i++){
+            result=result+(h*1.5)*Math.pow(0.5,i-1);
+        }
+        return result-h/32;
+    }
 }
 
 
