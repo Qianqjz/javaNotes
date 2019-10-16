@@ -15,6 +15,7 @@ public class Main31 {
             double h = scanner.nextDouble();
             System.out.printf("%g\n", getJourney(h));
             System.out.printf("%g\n", getTenthHigh(h));
+            System.out.printf("%g\n", getDistance(h,5));
         }
 
         scanner.close();
@@ -30,6 +31,14 @@ public class Main31 {
         double down = (Math.pow(0.5, 5) - 1) / (0.5 - 1);
 
         return h * 0.5 * up + h * down;
+    }
+
+    private static double getDistance(double h,int count){
+        double result =0;
+        for(int i=1;i<=count;i++){
+            result = result+(h*3/2)*Math.pow(0.5,i-1);
+        }
+        return  result-getTenthHigh(h);
     }
 }
 
