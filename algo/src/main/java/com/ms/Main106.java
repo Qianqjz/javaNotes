@@ -20,7 +20,7 @@ class Main106 {
                     zsum+=s;
                 }
             }
-            System.out.println(fnum);
+            System.out.print(fnum);
             System.out.printf("%.1f",(float)zsum/znum);
         }
     }
