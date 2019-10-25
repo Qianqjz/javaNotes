@@ -18,6 +18,7 @@ public class Main24 {
                     }
                 }
             }
+            System.out.println(builder.toString());
             StringBuilder result = new StringBuilder();
             int k = 0;
             for (int i = 0; i < str.length(); i++) {

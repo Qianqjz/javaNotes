@@ -10,9 +10,8 @@ import java.util.Scanner;
 public class Main01{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        String line;
-        while(scan.hasNextLine()){
-            line =  scan.nextLine().trim();
+        while(scan.hasNext()){
+            String line =  scan.nextLine().trim();
             String[] array = line.split(" ");
             int lastNumber = array[array.length-1].length();
             System.out.println( array[array.length-1].length());
