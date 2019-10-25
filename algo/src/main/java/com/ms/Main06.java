@@ -2,11 +2,21 @@ package com.ms;
 
 import java.util.Scanner;
 
-/**
- *
- */
-
 public class Main06 {
+
+    private static String find(long l){
+        StringBuilder builder=new StringBuilder();
+        long i=2;
+        while(i<=l){
+            while(l%i==0){
+                builder.append(i).append(' ');
+                l/=i;
+            }
+            i++;
+        }
+        return builder.toString();
+    }
+
     private static String findPrimes(long lon){
         StringBuilder builder=new StringBuilder(128);
         long i=2;
