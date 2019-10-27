@@ -34,29 +34,29 @@ public class Main94 {
             } else {
                 return parse(num / 10 * 10) + " " + parse(num % 10);
             }
-        } else if (num < 1_000) { // 千以下
+        } else if (num < 1000) { // 千以下
             if (num % 100 == 0) {
                 return parse(num / 100) + " hundred";
             } else {
                 return parse(num / 100) + " hundred and " + parse(num % 100);
             }
-        } else if (num < 1_000_000) { // 百万以下
-            if (num % 1_000 == 0) {
-                return parse(num / 1_000) + " thousand";
+        } else if (num < 1000000) { // 百万以下
+            if (num % 1000 == 0) {
+                return parse(num / 1000) + " thousand";
             } else {
-                return parse(num / 1_000) + " thousand " + parse(num % 1_000);
+                return parse(num / 1000) + " thousand " + parse(num % 1000);
             }
-        } else if (num < 1_000_000_000) { // 亿
-            if (num % 1_000_000 == 0) {
-                return parse(num / 1_000_000) + " million";
+        } else if (num < 1000000000) { // 亿
+            if (num % 1000000 == 0) {
+                return parse(num / 1000000) + " million";
             } else {
-                return parse(num / 1_000_000) + " million " + parse(num % 1_000_000);
+                return parse(num / 1000000) + " million " + parse(num % 1000000);
             }
-        } else if (num < 10_000_000_000L) { // 十亿
-            if (num % 1_000_000_000 == 0) {
-                return parse(num / 1_000_000_000) + " billion";
+        } else if (num < 10000000000L) { // 十亿
+            if (num % 1000000000 == 0) {
+                return parse(num / 1000000000) + " billion";
             } else {
-                return parse(num / 1_000_000_000) + " billion " + parse(num % 1_000_000_000);
+                return parse(num / 1000000000) + " billion " + parse(num % 1000000000);
             }
         } else {
             return "error";

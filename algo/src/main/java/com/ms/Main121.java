@@ -6,7 +6,7 @@ public class Main121 {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             int m = scanner.nextInt();
-            SortedSet<Integer> set = new TreeSet<>();
+            SortedSet<Integer> set = new TreeSet<Integer>();
             for (int i = 0; i < m; i++) {
                 set.add(scanner.nextInt());
             }

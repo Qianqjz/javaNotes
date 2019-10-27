@@ -17,7 +17,6 @@ public class Main {
                     index=i;
                 }
             }
-
             System.out.println(input.substring(index,index+n));
         }
     }

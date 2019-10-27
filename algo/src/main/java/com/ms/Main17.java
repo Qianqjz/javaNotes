@@ -46,8 +46,6 @@ public class Main17 {
             System.out.println(s);
 
         }
-
-
     }
 }
 
