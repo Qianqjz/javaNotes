@@ -17,7 +17,7 @@ public class Main123 {
             String goal=sc.next();
             int m=sc.nextInt();
             int count =0;
-            ArrayList<String> arrayList=new ArrayList<>();
+            ArrayList<String> arrayList=new ArrayList<String>();
             for(int i=0;i<input.length;i++){
                 if(input[i].length()==goal.length()&&!input[i].equals(goal)){
                     if(Equle(input[i],goal)){

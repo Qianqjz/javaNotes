@@ -17,7 +17,7 @@ public class Main117 {
     }
 
     private static String encrypt(String mask, String s) {
-        HashSet<Character> set=new LinkedHashSet<>();
+        HashSet<Character> set=new LinkedHashSet<Character>();
         //这是在处理密码全部使用大写
         for (int i=0;i<mask.length();i++){
             char c=mask.charAt(i);

@@ -13,6 +13,20 @@
         <module>thread</module>
         <module>spring</module>
         <module>design_pattern</module>
+        <module>mybatis</module>
+        <module>redis</module>
+        <module>mysql</module>
+        <module>linux</module>
+        <module>zk</module>
+        <module>dubbo</module>
+        <module>mq</module>
+        <module>jvm</module>
+        <module>spring_boot</module>
+        <module>spring_cloud</module>
+        <module>mongodb</module>
+        <module>docker</module>
+        <module>kafka</module>
+        <module>es</module>
     </modules>
 
     <dependencies>

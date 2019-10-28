@@ -16,10 +16,16 @@ public class TreeApp {
         theTree.insert(37,1.2);
         theTree.insert(43,1.7);
         theTree.insert(30,1.5);
-        theTree.insert(33,1.2);
+        theTree.insert(20,1.2);
         theTree.insert(87,1.7);
-        theTree.insert(93,1.5);
         theTree.insert(97,1.5);
+        theTree.insert(8,1.3);
+        theTree.insert(65,1.7);
+        theTree.insert(80,1.5);
+        theTree.insert(58,1.5);
+        theTree.insert(68,1.5);
+
+        theTree.displayTree();
 
         while (true){
             System.out.print("enter first letter of show: ");

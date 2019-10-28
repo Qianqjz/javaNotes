@@ -10,7 +10,7 @@ public class Main119 {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
             int n=scan.nextInt();
-            List<String> list=new ArrayList<>();
+            List<String> list=new ArrayList<String>();
             while(--n>=0){
                 list.add(scan.nextLine());
             }
