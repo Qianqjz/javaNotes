@@ -27,6 +27,7 @@
         <module>docker</module>
         <module>kafka</module>
         <module>es</module>
+        <module>javase</module>
     </modules>
 
     <dependencies>
