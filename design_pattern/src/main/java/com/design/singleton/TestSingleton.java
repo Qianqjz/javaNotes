@@ -2,6 +2,15 @@ package com.design.singleton;
 
 import org.junit.Test;
 
+/**
+ *
+ * 1.构造私有。
+ * 2.以静态方法或者枚举返回实例。
+ * 3.确保实例只有一个，尤其是多线程环境。
+ * 4.确保反序列换时不会重新构建对象。
+ *
+ *
+ */
 public class TestSingleton {
 
     @Test
@@ -44,6 +53,15 @@ public class TestSingleton {
 
         System.out.println(s01==s02);
 
+    }
+
+    @Test
+    public void test05(){
+        Singleton05 s=Singleton05.getInstance();
+        Singleton05 s1=Singleton05.getInstance();
+        System.out.println(s);
+        System.out.println(s1);
+        System.out.println(s==s1);
     }
 
 }
