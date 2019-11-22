@@ -2,7 +2,71 @@
 
 #### 1 redis介绍
 
+官方网站：https://redis.io/download
+
 #### 2 单机版安装
+
+##### 2.1 下载redis
+
+```shell
+ wget http://download.redis.io/releases/redis-5.0.0.tar.gz
+```
+
+##### 2.2 解压
+
+```shell
+tar  -zxvf  xxxx -C /opt/apps/
+```
+
+##### 2.3 编译
+
+```shell
+cd /opt/apps/
+ln -s redis5.0.0/ redis
+
+make -j 4 采用4核进行编译
+
+make install /usr/local/ 将编译完成的redis文件放在此处
+随后的redis 起停都在此处执行命令
+
+```
+
+##### 2.4 进入软连接的redis
+
+```shell
+vim /opt/apps/redis/redis.conf
+
+bind 0.0.0.0 任意地址都可以访问redis
+
+daemonize yes 允许后台执行redis
+```
+
+##### 2.5  将第四步的redis.conf 赋值到编译完成的地方
+
+```shell
+cp /opt/apps/redis/redis.conf /usr/local/resdis/bin
+```
+
+##### 2.6  开启redis 
+
+```shell
+cd /usr/local/resdis/bin
+./resdis-server redis.conf 
+ps -ef |grep redis 这时的redis就在后台挂着呢
+
+./redis-cli 进入客户端
+可以存入，取值
+
+```
+
+##### 2.7 关闭redis
+
+```shell
+ ./redis-cli shutdown 推荐
+ 也可以直接杀进程号，
+```
+
+ 安装完成！
 
 #### 3 redis 客户端
 
