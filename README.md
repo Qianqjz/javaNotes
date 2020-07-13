@@ -732,6 +732,59 @@
     
 
 
+----------------------------
+      //js 
+        // 1.可以重复声明
+            // var a = 12;
+            // var a = 35;
+            // alert(a);
+        // 2.无法限制修改;没有常量的概念，自觉 ，java流行，严谨，死板，越适合开发大型项目；
+            // var PI = 3.1415926;
+            // var PI = 5.235;
+            // alert(PI);
+        // 3.没有块作用域
+            //{}
+            // if(true){var c = 123;}
+            // alert(c);
+            // for(){}
+
+
+            // let   
+                // 1不能重复声明 
+                        // let aa=3;    
+                        // let aa=5;
+                        // alert(aa);    
+                    // 2变量 可以修改 
+                        // let b=3;
+                        // b=4;
+                        // alert(b);
+                    // 3块级作用域的
+                        // {let aa=3}
+                        // alert(aa);
+              
+            // const 不能重复声明 常量 不可以修改  3块级作用域的 
+                    // const b=3;
+                    // b=4;
+                    // alert(b);
+
+=============
+
+    <script>
+     window.onload=function(){
+         var aBtn = document.getElementsByTagName('input');
+         //函数解决 var只认函数这一层。
+         for(let i = 0 ;i<aBtn.length;i++){
+             aBtn[i].onclick = function(){
+                 alert(i);
+             };   
+         }
+     };  
+     //变量冲突 ，块级作用域更容易避免这个问题     
+    </script>
+    <input type="button" value="按钮1">
+    <input type="button" value="按钮2">
+    <input type="button" value="按钮3">
+
 
 
 
